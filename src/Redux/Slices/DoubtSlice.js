@@ -12,7 +12,6 @@ const initialState = {
 export const createDoubt = createAsyncThunk(
   "api/createDoubt",
   async (credentials, { rejectWithValue }) => {
-    console.log(credentials);
     try {
       const response = await axios.post(
         `${import.meta.env.VITE_SERVER_HOST}/api/doubt/create`,
@@ -33,7 +32,6 @@ export const fetchStudentDoubts = createAsyncThunk(
         `${import.meta.env.VITE_SERVER_HOST}/api/doubt`,
         { params: credentials }
       );
-      console.log(response.data);
       return response.data;
     } catch (error) {
       return rejectWithValue(error.response);

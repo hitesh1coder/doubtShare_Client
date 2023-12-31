@@ -22,7 +22,6 @@ const DoubtHistory = () => {
   const [sort, setSort] = useState({ sortBy: "createdAt", order: "desc" });
 
   const { doubts, status } = useSelector((state) => state.doubt);
-  console.log(doubts);
   const { user } = useSelector((state) => state.user);
   const studentId = user.userid;
 
@@ -45,7 +44,6 @@ const DoubtHistory = () => {
       <Container
         sx={{
           minWidth: "80vw",
-
           display: "flex",
           justifyContent: "flex-end",
           alignItems: "center",
@@ -58,7 +56,7 @@ const DoubtHistory = () => {
             labelId="demo-select-small-label"
             id="demo-select-small"
             value={subject}
-            label="Age"
+            label="Subject"
             onChange={handleFilterChange}
           >
             <MenuItem value="">

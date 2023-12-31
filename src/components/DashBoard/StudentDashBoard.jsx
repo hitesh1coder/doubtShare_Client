@@ -4,8 +4,12 @@ import React from "react";
 import { Box, Container } from "@mui/material";
 import HistoryIcon from "@mui/icons-material/History";
 
-import { DoubtLists, OngoingSessions, CreateDoubtModal } from "../index";
-import Header from "../Header/Header";
+import {
+  Header,
+  DoubtLists,
+  OngoingSessions,
+  CreateDoubtModal,
+} from "../index";
 
 const StudentDashboard = () => {
   return (
@@ -36,9 +40,9 @@ const StudentDashboard = () => {
         }}
       >
         <Box>
-          <h3>
+          <h2>
             <HistoryIcon /> Doubt History
-          </h3>
+          </h2>
           <DoubtLists />
         </Box>
       </Container>
@@ -56,7 +60,7 @@ const StudentDashboard = () => {
         }}
       >
         <Box>
-          <h3>Ongoing Session</h3>
+          <h2>Ongoing Session</h2>
           <OngoingSessions />
         </Box>
       </Container>
