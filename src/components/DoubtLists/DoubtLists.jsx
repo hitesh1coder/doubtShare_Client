@@ -87,7 +87,7 @@ const DoubtHistory = () => {
             onClick={handleSortChange}
           >
             <DownloadIcon />
-            latest
+            Newest
           </Fab>
         </Box>
       </Container>
@@ -98,8 +98,8 @@ const DoubtHistory = () => {
         <Container
           sx={{
             display: "flex",
-            width: "100%",
-            overflowX: "auto",
+            width: "80vw",
+            flexWrap: "wrap",
           }}
         >
           {doubts?.map((data) => {

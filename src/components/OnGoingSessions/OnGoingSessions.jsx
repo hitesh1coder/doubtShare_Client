@@ -11,7 +11,7 @@ const OngoingSessions = () => {
         sx={{
           background: "rgb(222, 255, 247)",
           margin: "0.5rem",
-          minWidth: 315,
+          minWidth: "70vw",
           maxWidth: 700,
         }}
       >

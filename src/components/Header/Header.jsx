@@ -32,8 +32,12 @@ const Header = () => {
       <h1>DoubtShare</h1>
       <Box>
         <h2>Welcome to Dashboard</h2>
+      </Box>
+      <Typography sx={{ display: "flex", alignItems: "center" }}>
+        <AccountBoxIcon /> {user?.name.toUpperCase()}
         <span
           style={{
+            margin: "0 0.3rem",
             color: "white",
             background: "teal",
             padding: "0.1rem",
@@ -43,10 +47,8 @@ const Header = () => {
         >
           {user?.userType}
         </span>
-      </Box>
-      <Typography sx={{ display: "flex", alignItems: "center" }}>
-        <AccountBoxIcon /> {user?.name.toUpperCase()}
       </Typography>
+
       <Button
         sx={{ height: "2rem" }}
         variant="contained"

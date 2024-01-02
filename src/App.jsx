@@ -6,7 +6,8 @@ import {
   Route,
   useNavigate,
 } from "react-router-dom";
-import { Auth, StudentDashboard } from "./components/index";
+import { Auth, DashBoard } from "./components/index";
+import PrivateRouts from "./PrivateRouts";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -28,7 +29,9 @@ const App = () => {
         />
         <Routes>
           <Route path="/" element={<Auth />} />
-          <Route path="/dashboard" element={<StudentDashboard />} />
+          <Route element={<PrivateRouts />}>
+            <Route path="/dashboard" element={<DashBoard />} />
+          </Route>
         </Routes>
       </div>
     </Router>

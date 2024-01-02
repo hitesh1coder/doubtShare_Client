@@ -14,7 +14,6 @@ import {
 const StudentDashboard = () => {
   return (
     <div>
-      <Header />
       <Container
         sx={{
           margin: "1.5rem auto",
@@ -30,17 +29,18 @@ const StudentDashboard = () => {
       <Container
         sx={{
           display: "flex",
+          width: "100",
+          minWidth: "90vw",
           justifyContent: "space-evenly",
           alignItems: "center",
           flexDirection: "column",
           gap: "1rem",
           boxShadow: "1px 2px 10px 2px rgba(0, 0, 0, 0.2)",
           margin: "1.5rem auto",
-          padding: "0.8rem",
         }}
       >
         <Box>
-          <h2>
+          <h2 style={{ marginLeft: "2rem" }}>
             <HistoryIcon /> Doubt History
           </h2>
           <DoubtLists />

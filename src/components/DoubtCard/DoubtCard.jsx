@@ -10,7 +10,7 @@ const DoubtCard = ({ doubt }) => {
         sx={{
           background: "rgb(250, 252, 230)",
           margin: "0.5rem",
-          minWidth: 315,
+          width: "20rem",
         }}
       >
         <CardContent
