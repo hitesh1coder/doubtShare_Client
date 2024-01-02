@@ -1,7 +1,7 @@
 import React from "react";
 import StudentDashboard from "./StudentDashBoard";
 import Header from "../Header/Header";
-import TutorDashBoard from "./tutorDashBoard";
+import TutorDashBoard from "./TutorDashBoard";
 import { useSelector } from "react-redux";
 
 const DashBoard = () => {
