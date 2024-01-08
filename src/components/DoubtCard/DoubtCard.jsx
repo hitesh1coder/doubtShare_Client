@@ -8,9 +8,11 @@ const DoubtCard = ({ doubt }) => {
     <>
       <Card
         sx={{
-          background: "rgb(250, 252, 230)",
+          background: "linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)",
           margin: "0.5rem",
           width: "20rem",
+          borderRadius: "1rem",
+          boxShadow: "1px 2px 10px 2px rgba(0, 0, 0, 0.2)",
         }}
       >
         <CardContent
@@ -20,7 +22,11 @@ const DoubtCard = ({ doubt }) => {
             {user.name}
           </Typography>
           <Typography
-            sx={{ background: "#fff", padding: "0.4rem" }}
+            sx={{
+              background: "#fff",
+              padding: "0.4rem",
+              borderRadius: "0.3rem",
+            }}
             variant="h5"
             component="div"
           >

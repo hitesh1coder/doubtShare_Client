@@ -37,10 +37,11 @@ const StudentDashboard = () => {
           gap: "1rem",
           boxShadow: "1px 2px 10px 2px rgba(0, 0, 0, 0.2)",
           margin: "1.5rem auto",
+          borderRadius: "0.3rem",
         }}
       >
         <Box>
-          <h2 style={{ marginLeft: "2rem" }}>
+          <h2 style={{ textAlign: "center", margin: "1rem 0" }}>
             <HistoryIcon /> Doubt History
           </h2>
           <DoubtLists />
@@ -50,17 +51,21 @@ const StudentDashboard = () => {
       <Container
         sx={{
           display: "flex",
+          width: "100",
+          minWidth: "90vw",
           justifyContent: "space-evenly",
           alignItems: "center",
           flexDirection: "column",
           gap: "1rem",
           boxShadow: "1px 2px 10px 2px rgba(0, 0, 0, 0.2)",
           margin: "1.5rem auto",
-          padding: "0.8rem",
+          borderRadius: "0.3rem",
         }}
       >
         <Box>
-          <h2>Ongoing Session</h2>
+          <h2 style={{ textAlign: "center", margin: "1rem 0" }}>
+            Ongoing Session
+          </h2>
           <OngoingSessions />
         </Box>
       </Container>

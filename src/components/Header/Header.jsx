@@ -20,12 +20,12 @@ const Header = () => {
         position: "sticky",
         top: "0",
         height: "10vh",
-        background: "#fff",
+        background: "linear-gradient(to right, #9796f0, #fbc7d4)",
         boxShadow: "2px 0 5px 0 rgba(0, 0, 0, 0.2)",
         display: "flex",
         justifyContent: "space-around",
         alignItems: "center",
-        color: "teal",
+        color: "white",
         zIndex: 10,
       }}
     >

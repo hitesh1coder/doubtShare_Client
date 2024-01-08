@@ -68,7 +68,7 @@ const DoubtHistory = () => {
           </Select>
         </FormControl>
         <FormHelperText>Sort By :</FormHelperText>
-        <Box sx={{ margin: "0.2rem" }}>
+        <Box sx={{ margin: "0.2rem", zIndex: "1" }}>
           <Fab
             variant="extended"
             size="small"
@@ -91,6 +91,7 @@ const DoubtHistory = () => {
           </Fab>
         </Box>
       </Container>
+      <hr />
 
       {status === "loading" ? (
         <h2>Loading...</h2>
